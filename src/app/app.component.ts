@@ -18,7 +18,7 @@ export class AppComponent {
       new Product(
         'MYSHOES',
         'Nike Air Force',
-        '../assets/images/products/air-shoes.jpg',
+        'https://raw.githubusercontent.com/Jesusd19/InventarioApp/master/src/assets/images/products/air-shoes.jpg',
         ['Men', 'Shoes', 'Running Shoes'],
         129.99
       ),
