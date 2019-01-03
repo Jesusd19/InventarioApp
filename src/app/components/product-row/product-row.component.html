@@ -1,0 +1,29 @@
+<!-- <app-product-image [product]="product"></app-product-image>
+<div class="container">
+  <div class="header">{{ product.name }}</div>
+  <div class="meta">
+    <div class="product-sku">SKU #{{ product.sku }}</div>
+  </div>
+  <div class="descri">
+    <app-product-department [product]="product"></app-product-department>
+  </div>
+</div>
+<app-price-display [price]="product.price"></app-price-display> -->
+
+<div class="row">
+    <div class="col s12 m4">
+      <div class="card">
+        <div class="card-image">
+            <app-product-image [product]="product"></app-product-image>
+            <span class="card-title"><h4 class="text-black">{{ product.name }}</h4></span>
+          </div>
+        <div class="card-content">
+            <div class="product-sku">SKU #{{ product.sku }}</div>
+            <app-product-department [product]="product"></app-product-department>
+        </div>
+        <div class="card-action">
+            <app-price-display [price]="product.price"></app-price-display>
+        </div>
+      </div>
+    </div>
+  </div>
